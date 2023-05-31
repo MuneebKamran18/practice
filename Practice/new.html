@@ -8,25 +8,64 @@
     <title>Document</title>
 <style> 
  .row th{
-    border: 2px green solid;
+    border: 4px green solid;
+    font-size: 70px;
     background-color: yellow;
  }
- .row td{
-    border: 2px green solid;
+ 
+ .hd{
+    color: darkred;
+     border-color: black !important; /* important tag */
+    border: 3px solid;
+    border-radius: 100px;
+    margin-left: 490px;
+    margin-right: 490px;
+    background-color: aqua;
  }
+ a{
+    text-decoration: none;
+ }
+
+
+ .row td{
+    border: 4px green solid;
+    background-color: bisque;
+    font-size: 50px;
+}
+.tbl{
+
+    border: 4px green solid; 
+    
+}
+.tb,.tb th,.tb td{
+    border: 4px solid darkblue;
+
+}
+
+.tb2{
+    border: 12px solid yellow;
+}
+.tb2 th{
+    border: 7px solid orangered;
+
+}
+.tb2 td{
+    border: 7px solid orangered;
+
+}
 
 </style>
 </head>
 <header>
 
-<nav class="navbar">
+<nav class="navbar " >
 <ul  >
    <li><a href="#" >Home</a> </li>
    <li><a href="#">About</a> </li>
    <li><a href="#">Service</a> </li>
    <li><a href="#">Contact Us</a> </li>
 
-   
+   <!-- <p>This the way to comment your code press ctrl+/</p> -->
 
 </ul>
 
@@ -37,7 +76,7 @@
 </header>
 
 <body>
-    <center><table border="2" >
+    <center><table class="tb2"  >
         <tr>
             <th >Ordered List</th>
             <th>Image</th>
@@ -74,23 +113,23 @@
 
 <br>
 
-<table style="border: 4px solid;" >
+<table class="tb" >
     <tr>
-        <th style="  border: 2px solid;">Ordered List</th>
-        <th style="  border: 2px solid;">Image</th>
-        <th style="  border: 2px solid;">Unordered List</th>
+    <th >Ordered List</th>
+        <th>Image</th>
+        <th>Unordered List</th>
     </tr>
     <tr>
-        <td style="  border: 2px solid;">
+        <td >
             
                 Apple
-        </td style="  border: 2px solid;">
+        </td >
          
-        <td style="  border: 2px solid;">
+        <td >
             Image 
         </td>
 
-        <td style="  border: 2px solid;">
+        <td >
             
                 Apple
             </td>
@@ -105,7 +144,10 @@
     <div style="background-color: black;"> 
 <center>
     <div style="background-color: palevioletred; margin-left: 250PX; margin-right: 250px; ">
-        <img  src="images (1).jpg" style="margin-top: 50px; border: 5px solid; border-radius: 25px; " >
+       <a  href="https://www.google.com/search?q=courage+the+cowardly+dog&source=lmns&bih=600&biw=1366&rlz=1C1GCEU_enPK1013PK1013&hl=en&sa=X&ved=2ahUKEwiW4PvNpp__AhWxrycCHdZjCacQ_AUoAHoECAEQAA"> 
+        <img  src="images (1).jpg" 
+        style="margin-top: 50px; border: 5px solid black; border-radius: 25px; " >
+       </a>  
         <h1 style="margin: 0px;">Courage the Dog</h1>
         <h1 style="margin:0px; padding-bottom: 50px; font-size: 60px;
          font-family: Verdana, Geneva, Tahoma, sans-serif;">
@@ -148,9 +190,14 @@
 </div>
 <br>
 <hr><br><br>
-<center><h1>Table</h1></center>
 <center>
-    <table  style="border: 2px green solid; size: 1000px;" >
+    <a href="https://www.youtube.com"><h1 class="hd" style="font-size: 80px;
+         font-family: 'Courier New', Courier, monospace; font-style: italic; ">
+            Table
+             </h1></a>
+    </center>
+<center>
+    <table  class="tbl" >
         <tr class="row">
             <th>Sr. No</th>
             <th>Roll No</th>
@@ -187,11 +234,54 @@
 
     </table>
 </center>
+ <br>
+ <br>
+ <br>
+ <br>
+<center>
+    <h1>31 May Task</h1>
+</center>
 
+<div  >
 
+    <div style="background-color: pink;height: 400px;; " >
+        <h1  style="margin-left : 40%; padding-top: 90px; font-size: 90px;">Header</h1>
+        </div>
 
+    
+        <h1 style="background-color: purple; height: 100px; margin: 0px;
+        padding-left : 40%; padding-top: 90px; font-size: 40px;color: antiquewhite;
+        ">Navigation Bar</h1>
+    
+<h1 style="margin: 0px;
+height: 100px; margin: 0px;
+        padding-left : 37%; padding-top: 150px; font-size: 60px;
+">Main Content</h1>
+<br><br><br><br><br>
+<h1 style="background-color: plum; height: 100px; margin: 0px;
+padding-left : 45%; padding-top: 90px; font-size: 50px;
+">Footer</h1>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+<div>
+<table >
+    <tr style="background-color: black; color: antiquewhite;">
+       <td style="padding-left: 200px; font-size: 40px;">Date</td>
+       <td style="padding-left:100px;font-size: 40px;">Order ID</td>
+       <td style="padding-left:50px;font-size: 40px;">Name</td>
+       <td style="padding-left:50px;font-size: 40px;">Price</td>
+       <td style="padding-left:100px;font-size: 40px;">Quantity</td>
+       <td style="padding-left:100px;font-size: 40px;">Total</td>
 
+    </tr>
+</table>
+
+</div>
 
 </body>
 

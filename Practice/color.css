@@ -1,3 +1,6 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
 .navbar{
 
     background-color:black;
@@ -11,7 +14,7 @@
         .navbar li {
              display: inline-flex;
              
-             
+             font-size: 25px;
             list-style: none; 
             
                        }         
