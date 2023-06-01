@@ -53,6 +53,41 @@
     border: 7px solid orangered;
 
 }
+.table-content{
+
+border-collapse: collapse;
+margin: 25px 0;
+font-size:  18px;
+min-width: 500px;
+border-radius: 5px 5px 0 0;
+overflow: hidden ;
+box-shadow: 0 0 20px black ;
+margin-left: 420px;
+}
+
+.table-content thead tr{
+    background-color: gold;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+.table-content th,td{ 
+padding: 12px 15px;
+}
+.table-content tbody tr{
+    border-bottom: 1px solid violet;
+}
+.table-content tbody tr:nth-of-type(even){
+
+    background-color: black;
+color: aliceblue;
+}
+.table-content tbody tr:last-of-type{
+
+    border-bottom: 2px solid orange;
+}
+
+
 
 </style>
 </head>
@@ -265,24 +300,133 @@ padding-left : 45%; padding-top: 90px; font-size: 50px;
 <br>
 <br>
 <br>
-<br>
-<br>
 
+
+
+<center><h1>Table</h1></center>
+
+<br>
+<br>
 <div>
-<table >
-    <tr style="background-color: black; color: antiquewhite;">
-       <td style="padding-left: 200px; font-size: 40px;">Date</td>
-       <td style="padding-left:100px;font-size: 40px;">Order ID</td>
-       <td style="padding-left:50px;font-size: 40px;">Name</td>
-       <td style="padding-left:50px;font-size: 40px;">Price</td>
-       <td style="padding-left:100px;font-size: 40px;">Quantity</td>
-       <td style="padding-left:100px;font-size: 40px;">Total</td>
+<Table class="table-content">
+   <thead> 
+    <tr >
+        <th>Date</th>
+        <th>Order ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
 
     </tr>
-</table>
+</thead>
+    <tr>
+<td>11 Oct</td>
+<td>221313</td>
+<td>Ali</td>
+<td>100$</td>
+<td>2</td>
+<td>100.0$</td>
 
+</tr>
+
+<tr  >
+    <td>11 Oct</td>
+    <td>221313</td>
+    <td>Ali</td>
+    <td>100$</td>
+    <td>2</td>
+    <td>100.0$</td>
+    
+    </tr>
+
+    <tr>
+        <td>11 Oct</td>
+        <td>221313</td>
+        <td>Ali</td>
+        <td>100$</td>
+        <td>2</td>
+        <td>100.0$</td>
+        
+        </tr>
+
+        <tr >
+            <td>11 Oct</td>
+            <td>221313</td>
+            <td>Ali</td>
+            <td>100$</td>
+            <td>2</td>
+            <td>100.0$</td>
+            
+            </tr>
+
+            <tr class="active">
+                <td>11 Oct</td>
+                <td>221313</td>
+                <td>Ali</td>
+                <td>100$</td>
+                <td>2</td>
+                <td>100.0$</td>
+                
+                </tr>
+  
+                <tr  >
+                    <td>11 Oct</td>
+                    <td>221313</td>
+                    <td>Ali</td>
+                    <td>100$</td>
+                    <td>2</td>
+                    <td>100.0$</td>
+                    
+                    </tr>
+                
+
+                    <tr  >
+                        <td>11 Oct</td>
+                        <td>221313</td>
+                        <td>Ali</td>
+                        <td>100$</td>
+                        <td>2</td>
+                        <td>100.0$</td>
+                        
+                        </tr>
+
+                        
+                        <tr  >
+                            <td>11 Oct</td>
+                            <td>221313</td>
+                            <td>Ali</td>
+                            <td>100$</td>
+                            <td>2</td>
+                            <td>100.0$</td>
+                            
+                            </tr>
+
+                            <tr  >
+                                <td>11 Oct</td>
+                                <td>221313</td>
+                                <td>Ali</td>
+                                <td>100$</td>
+                                <td>2</td>
+                                <td>100.0$</td>
+                                
+                                </tr>
+
+                                <tr  >
+                                    <td>11 Oct</td>
+                                    <td>221313</td>
+                                    <td>Ali</td>
+                                    <td>100$</td>
+                                    <td>2</td>
+                                    <td>100.0$</td>
+                                    
+                                    </tr>
+                                
+
+
+
+</Table>
 </div>
-
 </body>
 
 
