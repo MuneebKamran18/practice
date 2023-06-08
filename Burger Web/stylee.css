@@ -1,0 +1,23 @@
+.bg-c{
+
+    background-color: #ffc045;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(SuperbaBold\ Roman.ttf);
+}
+.burger{
+    font-family: myfont;
+    text-shadow: 1px 1px 5px white;
+font-size: 100px;
+    color: #42200b;
+    padding-top: 150px;
+}
+.week{
+    font-family: myfont;
+    font-size: 50px;
+    color: #42200b;
+    margin: 0px;
+    padding: 0px;
+}
