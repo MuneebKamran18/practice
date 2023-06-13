@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<style>
+@font-face {
+    font-family: myfont;
+    src: url(superabold.ttf);
+}
+
+</style>
+<body>
+    
+<div id="name">Ahmad Kamran</div>
+<button onclick="fun();"><h1>All in 1</h1></button>
+<br><br>
+
+<img id="img1" src="images/1.png" >
+<br>
+<button onclick="document.getElementById('img1').src='images/2.png' ;" > Change Image</button>
+<script>
+
+function fun() {
+   
+var x = 100;
+var y = 202;
+var z = 656;
+var a=x+y+z;
+    // document.getElementById('name').innerHTML=Date()
+    document.getElementById('name').innerHTML=z-y;
+
+document.getElementById('name').style.color='white';
+document.getElementById('name').style.fontSize='60px';
+document.getElementById('name').style.fontStyle='italic';
+document.getElementById('name').style.fontFamily='myfont';
+document.getElementById('name').style.backgroundColor='red';
+
+}
+
+</script>
+
+</body>
+</html>
