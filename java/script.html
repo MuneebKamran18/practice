@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
 <style>
@@ -22,15 +23,86 @@
 <img id="img1" src="images/1.png" >
 <br>
 <button onclick="document.getElementById('img1').src='images/2.png' ;" > Change Image</button>
+<hr>
+
+<div class="display-1" id="num1">Enter Number</div>
+<input type="number"  id="input1" class="form-control">
+
+<button class="btn btn-warning" onclick="nf()" > <h1>Magic</h1></button>
+<hr><hr><hr>
+
+<div   id="ans" class="display-1">CAlCULATOR </div>
+
+<input type="number"  id="num-1" class="form-control bg-warning" placeholder="Enter first number" >
+<input type="number"  id="num-2" class="form-control bg-warning" placeholder="Enter Second number">
+
+<br>
+<button onclick="calca()" class="btn btn-primary"> <h2>ADDITION</h2> </button>
+<button onclick="calcs()" class="btn btn-danger"> <h2>SUBTRACTION</h2> </button>
+<button onclick="calcm()" class="btn btn-info"> <h2>MULTIPLY</h2> </button>
+<button onclick="calcd()" class="btn btn-warning"> <h2>DIVIDE</h2> </button>
+
+
 <script>
+
+    function calca(){
+        var a = parseInt(  document.getElementById('num-1').value);
+        var b = parseInt (document.getElementById('num-2').value);
+        document.getElementById('ans').innerHTML= a+b;
+}
+
+function calcs(){
+        var a = parseInt(  document.getElementById('num-1').value);
+        var b = parseInt (document.getElementById('num-2').value);
+        document.getElementById('ans').innerHTML= a-b;
+
+
+    }
+
+    
+function calcm(){
+        var a = parseInt(  document.getElementById('num-1').value);
+        var b = parseInt (document.getElementById('num-2').value);
+        document.getElementById('ans').innerHTML= a*b;
+
+
+    }
+
+    
+function calcd(){
+        var a = parseInt(  document.getElementById('num-1').value);
+        var b = parseInt (document.getElementById('num-2').value);
+        document.getElementById('ans').innerHTML= a/b;
+
+
+    }
+
+ function nf(){
+    var m =  document.getElementById('input1').value;
+    if(m <= 30){
+        document.getElementById('num1').innerHTML='You are Young ;)';
+         }
+         if(m > 30){
+        document.getElementById('num1').innerHTML='You are Old :(';
+         }
+    
+    // document.getElementById('num1').innerHTML=m;
+
+ }  
+ 
+ 
 
 function fun() {
    
 var x = 100;
 var y = 202;
 var z = 656;
-var a=x+y+z;
+var g=x+y+z;
+
+ 
     // document.getElementById('name').innerHTML=Date()
+    
+
     document.getElementById('name').innerHTML=z-y;
 
 document.getElementById('name').style.color='white';
