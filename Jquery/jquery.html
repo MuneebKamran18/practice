@@ -34,11 +34,46 @@
 
 <button class="btn btn-dark" id="btn2">Append text</button>
 
+
+
+
+
 </div>
+<hr><hr><hr>
+  <div class="container-fluid bg-warning">
+    <br><br><br>
+<center><img  class=" pictures  w-25 " src="1.jpg" ></center>
+<br><br><br>
+</div>
+
 
 
 <script type="text/javascript" src="js/code.jquery.com_jquery-3.7.0.js"></script>
 <script>
+
+let images_array =[
+  '1.jpg',
+  '2.jpg',
+  '3.jpg',
+  '4.jpg',
+]
+
+let pic =$(".pictures")
+ let i = 0;
+setInterval(function(){
+ i= (i+1) % images_array.length
+  $(document).ready(function(){
+pic.fadeOut(3000, ({
+  pic.attr('src', images_array[i]);
+  pic.fadeIn(3000);
+} );
+
+
+});
+
+});
+
+
     
 $(document).ready(function(){
 $("#btn2").click(function(){
@@ -54,7 +89,7 @@ $("#btn2").click(function(){
 
 
     function blink_text() {
-    $('#blink').fadeOut(500);
+    $('#blink').fadeOut(500);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     $('#blink').fadeIn(500);
 }
 setInterval(blink_text, 1000);
@@ -65,15 +100,16 @@ setInterval(blink_text, 1000);
         $("#text").text('Hello new text');
            $("#text").fadeIn(1000);    
     });
-    
+     $(document).ready(function(){     
     $("#text").click(function(){
        $(this).hide();
 
     })
+    })
     $("#bi2").click(function(){
    $("#text").fadeOut(1000); 
-$(this).attr("src", "BurgerImage3.png");
-$("#text").fadeIn(1000);
+ $(this).attr("src", "BurgerImage3.png");
+ $("#text").fadeIn(1000);
     }) 
 
 </script>
