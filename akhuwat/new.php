@@ -8,16 +8,31 @@ $dataBaseName="muneeb_kamran";
 
 $con = new mysqli($serverAddress,$userName,$password,$dataBaseName);
 
-// $sql = "INSERT INTO `students_data_a`( `name`, `father_name`, `phone_number`, `email`, `roll_no`, `gender`, `age`) VALUES ('Rabbia','Hafeez','03000212123','rabi@gmail.com','2123','Female','22')";
+if( isset($_POST['name'])){
 
-// if($con->query($sql) ==TRUE){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    
+    
+    
+    
+    $sql = "INSERT INTO `sign_up`( `name`, `email`, `password`) VALUES ('$name','$email','$password')";
+    
+    if($con->query($sql) ==TRUE){
+    
+        echo'<h1>Congrats!</h1>';
+    }
+    else{
+    
+        echo 'Something Went Wrong';
+    }
+    
 
-//     echo'<h1>Congrats!</h1>';
-// }
-// else{
+}
 
-//     echo 'Something Went Wrong';
-// }
+
+
 ?>
 
 <!doctype html>
@@ -113,18 +128,18 @@ $con = new mysqli($serverAddress,$userName,$password,$dataBaseName);
           <div class="container">
     <div class="card">
         <h1 class="card_title">Login to your account</h1>
-        <p class="card_title-info">Pen By Anna Batura</p>
-        <form class="card_form">
+        <p class="card_title-info">Muneeb Kamran</p>
+        <form class="card_form" method="POST" action="new.php">
             <div class="input">
-                <input type="text" class="input_field" required />
+                <input type="text" class="input_field" name="name" required />
                 <label class="input_label">Full name</label>
             </div>
             <div class="input">
-                <input type="text" class="input_field" required />
+                <input type="text" class="input_field" name="email" required />
                 <label class="input_label">Email</label>
             </div>
             <div class="input">
-                <input type="password" class="input_field" required />
+                <input type="password" class="input_field" name="password" required />
                 <label class="input_label">Password</label>
                 <span class="input_eye">
 
@@ -134,11 +149,9 @@ $con = new mysqli($serverAddress,$userName,$password,$dataBaseName);
                     </svg>
                 </span>
             </div>
-            <button class="card_button">Get started</button>
+            <button class="card_button" type="submit" >Get started</button>
         </form>
-        <div class="card_info">
-            <p>Not registered? <a href="#">Create an account</a></p>
-        </div>
+        
     </div>
     <div class="fish-shadow-con">
         <svg class="fish-shadow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin slice" viewBox="0 0 743 645">
