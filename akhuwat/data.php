@@ -18,7 +18,7 @@ if(isset($_POST['name'])){
     
     
     $sql="INSERT INTO `students_data_a` (`name`,`father_name`,`age`,`phone_number`,`email`,`gender`,`roll_no`) VALUES
-    ('$name','$father_name','$age','$email','$phone_no','$roll_no','$gender')";
+    ('$name','$father_name','$age','$phone_no','$email','$roll_no','$gender')";
     
     
     
